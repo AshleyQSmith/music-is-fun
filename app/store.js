@@ -8,7 +8,7 @@ let _state = {
    * @type {Song[]} */
   playlist: []
 };
-
+ 
 /** Collection of listeners to be called based on keyed state changes
  * @type {{[x:string]: function[]}}
  */

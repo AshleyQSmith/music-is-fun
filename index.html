@@ -14,32 +14,42 @@
 
   <body class="container-fluid">
     <header class="row">
-      <div class="col-12 bannerStyle">
-        <p>Music is Fun</p>
+      <div class="col-12 text-center bg-dark text-light py-5">
+        <h1>Music is Fun</h1>
       </div>
-      <div class="offset-8 col-4">
-        <form onsubmit="app.songsController.search(event)">
-          <input
-            type="text"
-            class="form-control"
-            name="query"
-            placeholder="Search For Music"
-          />
-          <button class="btn btn-success mt-1 form-control" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
+
     </header>
 
-    <main class="row">
-      <div class="col-6">
+    <main class="row pt-3">
+      <div class="col-4 ">
+
+          <form onsubmit="app.songsController.search(event)">
+            <input
+              type="text"
+              class="form-control"
+              name="query"
+              placeholder="Search For Music"
+            />
+            <button class="btn btn-success mt-1 form-control" type="submit">
+              Search
+            </button>
+          </form>
+
         <h3 class="text-center">Search Results</h3>
-        <div id="songs" class="col-12 m-0">
+        <div id="songs" class="col-12 m-0"></div>
+      </div>
           <!-- template to generate -->
+          
+      <div class="col-4" id="active-song"></div>
+
+
+
+
+
+
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4">
         <h3 class="text-center">Playlist</h3>
         <div class="col-12 m-0" id="playlist">
           <!-- template for playlist -->
